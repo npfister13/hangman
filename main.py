@@ -56,8 +56,7 @@ def check_guesses(letter, used):
 def check_if_solved(answer):
     blanks = 0
     for i in range(len(answer)):
-        if answer[i] == " _" \
-                :
+        if answer[i] == " _":
             blanks += 1
     if blanks == 0:
         return True

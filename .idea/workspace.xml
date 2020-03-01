@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="2f44b40f-b5b4-40be-aeab-baa1d14e462d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +94,19 @@
       <option name="presentableId" value="Default" />
       <updated>1583088971356</updated>
     </task>
+    <task id="LOCAL-00001" summary="update">
+      <created>1583100558617</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1583100558618</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="update" />
+    <option name="LAST_COMMIT_MESSAGE" value="update" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="178" key="#Notifications" timestamp="1583099141948">
@@ -104,10 +117,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="414" y="175" width="1092" height="706" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1982.0.1858.1080@0.0.1920.1040" timestamp="1583100396735" />
-    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1583100213298">
+    <state x="599" y="114" key="CommitChangelistDialog2" timestamp="1583100558036">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040/1982.0.1858.1080@0.0.1920.1040" timestamp="1583100213298" />
+    <state x="599" y="114" key="CommitChangelistDialog2/0.0.1920.1040/1982.0.1858.1080@0.0.1920.1040" timestamp="1583100558036" />
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1583100569316">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040/1982.0.1858.1080@0.0.1920.1040" timestamp="1583100569316" />
     <state width="1899" height="282" key="GridCell.Tab.0.bottom" timestamp="1583100508785">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
