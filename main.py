@@ -5,10 +5,12 @@ import re
 def main():
     intro()
     word_bank = {1: "dog", 2: "cat", 3: "home", 4: "friend", 5: "tight", 6: "ozmo", 7: "car", 8: "photo",
-                 9: "town", 10: "drink", 11: "burger", 12:"burrito", 13: "cow", 14: "taco"}
+                 9: "town", 10: "drink", 11: "burger", 12: "burrito", 13: "cow", 14: "taco"}
     word = word_bank[random.randint(1, len(word_bank))]
     word_split = []
     answer = []
+    used = []
+    duplicate_answer = False
     solved = False
     for i in word:
         word_split.append(i)
@@ -18,19 +20,24 @@ def main():
     while tries != 0 and solved is not True:
         print_board(answer)
         letter = user_input()
-        if letter not in word_split:
-            print("There is no %s in the word." % letter)
-            tries -= 1
-            print("Tries left: %s" % tries)
-            print("")
+
+        duplicate_answer = check_guesses(letter, used)
+        if duplicate_answer is True:
+            print("You already used the letter %s." % letter)
         else:
-            for i in range(len(word_split)):
-                if letter == word_split[i]:
-                    answer[i] = letter
-                else:
-                    pass
-            print("")
+            if letter not in word_split:
+                print("There is no %s in the word." % letter)
+                tries -= 1
+                print("Tries left: %s" % tries)
+            else:
+                for i in range(len(word_split)):
+                    if letter == word_split[i]:
+                        answer[i] = letter
+                    else:
+                        pass
+        used.append(letter)
         solved = check_if_solved(answer)
+        print("")
 
     if tries == 0:
         print("You lose! The word was %s." % word)
@@ -39,10 +46,17 @@ def main():
     print("Thanks for playing!")
 
 
+def check_guesses(letter, used):
+    for i in range(len(used)):
+        if letter in used[i]:
+            return True
+    return False
+
+
 def check_if_solved(answer):
     blanks = 0
     for i in range(len(answer)):
-        if answer[i] == " _"\
+        if answer[i] == " _" \
                 :
             blanks += 1
     if blanks == 0:
