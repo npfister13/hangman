@@ -10,7 +10,6 @@ def main():
     word_split = []
     answer = []
     used = []
-    duplicate_answer = False
     solved = False
     for i in word:
         word_split.append(i)
