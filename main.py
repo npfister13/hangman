@@ -22,12 +22,12 @@ def main():
 
         duplicate_answer = check_guesses(letter, used)
         if duplicate_answer is True:
-            print("You already used the letter %s." % letter)
+            print("You already used the letter {}.".format(letter))
         else:
             if letter not in word_split:
-                print("There is no %s in the word." % letter)
+                print("There is no {} in the word.".format(letter))
                 tries -= 1
-                print("Tries left: %s" % tries)
+                print("Tries left: {}".format(tries))
             else:
                 for i in range(len(word_split)):
                     if letter == word_split[i]:
@@ -39,9 +39,9 @@ def main():
         print("")
 
     if tries == 0:
-        print("You lose! The word was %s." % word)
+        print("You lose! The word was {}.".format(word))
     elif tries > 0:
-        print("Congrats, you won! The word was: %s" % word)
+        print("Congrats, you won! The word was: {}".format(word))
     print("Thanks for playing!")
 
 
